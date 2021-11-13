@@ -11,7 +11,7 @@ LOCAL_CFLAGS := -Werror \
                    -g -O0
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../qexif \
-                    $(LOCAL_PATH)/../../qcom-caf/media/mm-core/inc
+                    hardware/qcom/media/mm-core/inc
 
 LOCAL_HEADER_LIBRARIES := libutils_headers
 LOCAL_HEADER_LIBRARIES += media_plugin_headers
