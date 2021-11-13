@@ -1,26 +1,8 @@
-# ArrowOS
+# AOSPA
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_santoni.mk
+    $(LOCAL_DIR)/aospa_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_santoni-userdebug \
-    arrow_santoni-user \
-    arrow_santoni-eng
-
-# AEX
-PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/aosp_santoni.mk
-
-COMMON_LUNCH_CHOICES += \
-    aosp_santoni-userdebug \
-    aosp_santoni-user \
-    aosp_santoni-eng
-
-# Octavi-OS
-PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/octavi_santoni.mk
-
-COMMON_LUNCH_CHOICES += \
-    octavi_santoni-userdebug \
-    octavi_santoni-user \
-    octavi_santoni-eng
+    aospa_santoni-userdebug \
+    aospa_santoni-user \
+    aospa_santoni-eng

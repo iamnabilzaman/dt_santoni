@@ -22,22 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common Octavi-OS stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
-
-# Prebuilt apps
-$(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
+# Inherit some common AOSPA stuff.
+$(call inherit-product, vendor/aospa/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := octavi_santoni
+PRODUCT_NAME := aospa_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
-	
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
