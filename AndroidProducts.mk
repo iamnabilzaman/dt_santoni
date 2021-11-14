@@ -1,8 +1,8 @@
-# AOSPA
+# CAF-Extended
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aospa_santoni.mk
+    $(LOCAL_DIR)/cafex_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    aospa_santoni-userdebug \
-    aospa_santoni-user \
-    aospa_santoni-eng
+    cafex_santoni-userdebug \
+    cafex_santoni-user \
+    cafex_santoni-eng
