@@ -36,6 +36,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PACKAGES += \
     android.hardware.power-service
 
+TARGET_BOARD_PLATFORM := msm8937
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
