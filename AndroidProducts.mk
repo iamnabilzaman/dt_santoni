@@ -1,8 +1,8 @@
-# CipherOS (Lineage + AOSP)
+# AOSPA (CAF)
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_santoni.mk
+    $(LOCAL_DIR)/aospa_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_santoni-userdebug \
-    cipher_santoni-user \
-    cipher_santoni-eng
+    aospa_santoni-userdebug \
+    aospa_santoni-user \
+    aospa_santoni-eng
