@@ -176,7 +176,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # SELinux
 include device/xiaomi/santoni/sepolicy/legacy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
@@ -189,7 +188,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2021-07-05
+VENDOR_SECURITY_PATCH := 2022-01-01
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
