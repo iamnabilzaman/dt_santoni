@@ -132,19 +132,10 @@ TARGET_NO_RPC := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
-# HALs
-QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)/qcom-caf
-DEVICE_SPECIFIC_AUDIO_PATH := $(DEVICE_PATH)/qcom-caf/audio
-DEVICE_SPECIFIC_DISPLAY_PATH := $(DEVICE_PATH)/qcom-caf/display
-DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest-lineage.xml
-endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_santoni
@@ -185,9 +176,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # SELinux
 include device/xiaomi/santoni/sepolicy/legacy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-lineage/vendor
-endif
+fghhhhh
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
