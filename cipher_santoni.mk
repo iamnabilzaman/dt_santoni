@@ -22,20 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common Cipher stuff.
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+# Inherit some common AOSPA stuff.
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := cipher_santoni
+PRODUCT_NAME := aospa_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Cipher Flags
+# AOSPA Flags
 TARGET_BOOT_ANIMATION_RES := 720
-CIPHER_GAPPS := true
-CIPHER_MAINTAINER := iamnabilzaman
+TARGET_BOARD_PLATFORM := MSM8937
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
