@@ -24,6 +24,7 @@ $(call inherit-product, device/xiaomi/santoni/device.mk)
 
 # Inherit some common Blaze stuff
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 720
 BLAZE_MAINTAINER := iamnabilzaman
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
