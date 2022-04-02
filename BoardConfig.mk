@@ -142,9 +142,6 @@ DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest-lineage.xml
-endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_santoni
@@ -185,9 +182,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # SELinux
 include device/xiaomi/santoni/sepolicy/legacy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-lineage/vendor
-endif
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
@@ -200,7 +194,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2021-07-05
+VENDOR_SECURITY_PATCH := 2022-01-01
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
@@ -215,6 +209,7 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk
