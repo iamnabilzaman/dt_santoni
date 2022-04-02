@@ -1,8 +1,8 @@
-# CipherOS (Lineage + AOSP)
+# ProjectBlaze (AOSP)
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_santoni.mk
+    $(LOCAL_DIR)/blaze_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_santoni-userdebug \
-    cipher_santoni-user \
-    cipher_santoni-eng
+    blaze_santoni-userdebug \
+    blaze_santoni-user \
+    blaze_santoni-eng
