@@ -124,6 +124,11 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libwfdservice.so|wfdshim.so \
+    /system/lib64/libwfdservice.so|wfdshim.so
+
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
